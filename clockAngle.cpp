@@ -13,7 +13,7 @@ int angleBetweenHands(string a) {
     string minutesStr = a.substr(3,6);
     int minutes = atoi(minutesStr.c_str());
     
-    int absoluteHourAngle = hour*AnglePerHour;
+    int absoluteHourAngle = hour*AnglePerHour+minutes.0.5;
     
     int absoluteMinuteAngle = minutes*AnglePerMinute;
     return narrowTheAbsoluteAngle(abs(absoluteMinuteAngle-absoluteHourAngle));
